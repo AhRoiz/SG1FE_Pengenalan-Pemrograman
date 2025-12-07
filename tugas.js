@@ -1,11 +1,18 @@
-console.log("Program Validasi Klub Malam");
-
 const prompt = require("prompt-sync")();
 
-const umur = Number(prompt("Masukkan umur: "));
+console.log("Validasi Masuk Klub");
 
+const umur = Number(prompt("Masukkan umur: "));
+//umur logic
 if (umur < 21) {
-    console.log("Tidak boleh masuk ");
+    console.log("Tidak boleh masuk");
 }
 
-console.log("Umur valid. Lanjut ke pengecekan uang...");
+//uang logic
+const uang = Number(prompt("Masukkan jumlah uang (dalam rupiah): "));
+
+if (uang < 500000) {
+    console.log("Tidak boleh masuk (uang tidak cukup)");
+}
+
+console.log("Anda boleh masuk!");
