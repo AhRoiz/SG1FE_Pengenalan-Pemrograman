@@ -6,4 +6,4 @@ const siswa = {
 
 const lulus = siswa.lulus ? "lulus" = "Selamat"
 
-console.log(`ada siswa bernama ${siswa.nama}, umur ${siswa.umur}, ${lulus}}`)
+console.log(`ada siswa bernama ${siswa.nama}, umur ${siswa.umur}, ${lulus}`)
